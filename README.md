@@ -20,7 +20,7 @@ By default:
     * Use Interface (starting from java 8, they are awesome)
     * If you cannot two mention options, then use abstract class, and only then ordinary class (probably this is poor design)
     * Learn Strategy pattern, and maybe factory
-    * Go does not have classes, only interfaces
+    * Go(golang) does not have classes, only interfaces
     
  4. Do not use arrays, use collections
     * In long term, you will reach the point when you will convert array to list
@@ -39,10 +39,10 @@ By default:
       *   if(someString.equals("fox")) return new Fox();
       * }
       
-  6. Do not use for and foreach construct
+ 6. Do not use for and foreach construct
     * Use collections streams, learn how they work and how do the labmdas work.
     
-  7. Readability over OOP sophistication and code size.
+ 7. Readability over OOP sophistication and code size.
     * Work towards DSL, code you write must be human readable and intuitive
     * If you want to choose some design pattern over readability, then you are probably doing a mistake
     * If you want to insert a hack or make variable name shorter, which makes code unreadable, then you are probably doing a mistake
@@ -51,21 +51,21 @@ By default:
     * If desing pattern eases the readability of complex class, then introduce it.  
     * Learn SOLID and desing pattens. Readability does not mean that you should not be an expert in OOD.
     
-  8. Do not use interfaces for testing purposes (only for polymorphic calls)
+ 8. Do not use interfaces for testing purposes (only for polymorphic calls)
     * This bloats the code.
     * You have mockito for that
     * For example, extracting DAO interface only for testing is plain stupid.
   
-  9. Testing.
+ 9. Testing.
     * Tests should be fast.
     * As less mocking as possible
     * Mocking is a smell of bad design.
     * Unit tests for business logic
     * Integration tests to speak with external stuff (database)
    
-  Not sure (may skip):
+ Not sure (may skip):
   
-  1. Do not use protected keyword (same for default accessability)
+ 1. Do not use protected keyword (same for default accessability)
     * Never had a situation where I have need it.
     * Most of the languages does not have such accessability modifiers
     * Internal and external presentation, why should I need some messy hacks? Class is a unit of sth, it is a black box, nothing more.
