@@ -71,6 +71,6 @@ Testing pitafalls:
     * Unit tests for internal business logic.
     * Integration tests to speak with external stuff (database).
     * Functional tests(Selenium, direct JSON request to your application) only to test that the basic functionality is working. Skip complex cases.
-    * Create functional tests as well as integration tests as less as possible. Especially functional.
+    * Create functional tests as well as integration tests as little as possible. Especially functional.
     
 (they bloat the code, make it hard to read + usually you will end with flow based on exceptions)
