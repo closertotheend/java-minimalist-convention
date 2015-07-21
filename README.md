@@ -63,7 +63,7 @@ By default:
     * Unit tests for business logic
     * Integration tests to speak with external stuff (database)
    
- Not sure (may skip):
+Not sure (may skip):
   
  1. Do not use protected keyword (same for default accessability)
     * Never had a situation where I have need it.
