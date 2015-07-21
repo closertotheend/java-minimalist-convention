@@ -66,7 +66,7 @@ Testing pitafalls:
   
  11. Testing.
     * Tests should be fast.
-    * As less mocking as possible. (We test real application, not your mocks)
+    * As little mocking as possible. (We test real application, not your mocks)
     * Mocking is a smell of bad design.
     * Unit tests for internal business logic.
     * Integration tests to speak with external stuff (database).
