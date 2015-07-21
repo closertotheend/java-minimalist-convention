@@ -15,7 +15,7 @@ By default:
     * C# (and any other language) does not have checked excptions.
     * Check Effective Java Item 59: Avoid unnecessary use of checked exceptions .
     
- 3. If you want to extend a class..
+ 3. If you want to extend a class.. (do not use abstract class or ordinary class, use composition and interfaces)
     * Try to decouple class into smaller clasees. Use composition over inheritance.
     * Use Interface instead of abstract class (especially, starting from java 8).
     * If you cannot two apply mention options, then use abstract class, and only then ordinary class (probably this is poor design).
@@ -42,8 +42,13 @@ By default:
       
  6. Do not use for and foreach construct.
     * Use collections streams, learn how they work and how do the labmdas work. They are shorter.
+ 
+ 7. (Arguable!) Do not use protected keyword (same for default accessability).
+    * Never had a situation where I have need it.
+    * Most of the languages does not have such accessability modifiers.
+    * IMHO, class should have only internal and external presentation. Class is a black box with input and output wires.
     
- 7. Readability over OOP sophistication and code size.
+ 8. Readability over OOP sophistication and code size.
     * Work towards DSL, code you write must be human readable and intuitive.
     * If you want to choose some design pattern over readability, then you are probably doing a mistake.
     * If you want to insert a hack or make variable name shorter, which makes code unreadable, then you are probably doing a mistake.
@@ -51,11 +56,6 @@ By default:
       then personally, I would choose hack because overengineered solution is harder to read (probably you will introduce more classes, so I will have to click a lot:). IMHO.
     * If desing pattern eases the readability of complex class, then introduce it.  
     * Learn SOLID and desing pattens. Readability does not mean that you should not be an expert in OOD.
-  
- 9. (Arguable!) Do not use protected keyword (same for default accessability).
-    * Never had a situation where I have need it.
-    * Most of the languages does not have such accessability modifiers.
-    * IMHO, class should have only internal and external presentation. Class is a black box with input and output wires.
  
 Testing pitafalls:
 
