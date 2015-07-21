@@ -18,7 +18,7 @@ By default:
  3. If you want to extend a class.. (do not use abstract class or ordinary class, use composition and interfaces)
     * Try to decouple class into smaller clasees. Use composition over inheritance.
     * Use Interface instead of abstract class (especially, starting from java 8).
-    * If you cannot two apply mention options, then use abstract class, and only then ordinary class (probably this is poor design).
+    * If you cannot apply two mentioned options, then use abstract class, and only then ordinary class (probably this will lead to poor design).
     * Learn Strategy pattern.
     * And maybe Factory pattern.
     * Go(golang) does not have classes, only interfaces.
@@ -44,7 +44,7 @@ By default:
     * Use collections streams, learn how they work and how do the labmdas work. They are shorter.
  
  7. (Arguable!) Do not use protected keyword (same for default accessability).
-    * Never had a situation where I have need it.
+    * I have never had a situation where it was useful.
     * Most of the languages does not have such accessability modifiers.
     * IMHO, class should have only internal and external presentation. Class is a black box with input and output wires.
     
