@@ -16,10 +16,11 @@ By default:
     * Check Effective Java Item 59: Avoid unnecessary use of checked exceptions 
     
  3. If you want to extend a class..
-    * Try to decouple class, use composition over inheritance
-    * Use Interface (starting from java 8, they are awesome)
-    * If you cannot two mention options, then use abstract class, and only then ordinary class (probably this is poor design)
-    * Learn Strategy pattern, and maybe factory
+    * Try to decouple class into smaller clasees. Use composition over inheritance
+    * Use Interface (starting from java 8 they are awesome)
+    * If you cannot two apply mention options, then use abstract class, and only then ordinary class (probably this is poor design)
+    * Learn Strategy pattern
+    * And maybe Factory pattern
     * Go(golang) does not have classes, only interfaces
     
  4. Do not use arrays, use collections
