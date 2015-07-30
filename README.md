@@ -60,6 +60,8 @@ By default:
  9. Do not use commas and labels.
  
  10. Keep away from creating your custom annotations. Try to use lambdas.
+    * Annotations are hard to debug.
+    * Annotations are hard to test.
  
 Testing pitafalls:
 
