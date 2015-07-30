@@ -59,7 +59,7 @@ By default:
  
  9. Do not use commas and labels.
  
- 10. Keep away from creating your custom annotations. Use lambdas. Annotaions should serve only as metainformation
+ 10. Keep away from creating your custom annotations. Try to use lambdas.
  
 Testing pitafalls:
 
