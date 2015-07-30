@@ -43,7 +43,7 @@ By default:
  6. Do not use for and foreach construct.
     * Use collections streams, learn how they work and how do the labmdas work. They are shorter.
  
- 7. (Arguable!) Do not use protected keyword (same for default accessability).
+ 7. Do not use protected keyword (same for default accessability).
     * I have never had a situation where it was useful.
     * Most of the languages does not have such accessability modifiers.
     * IMHO, class should have only internal and external presentation. Class is a black box with input and output wires.
@@ -56,6 +56,10 @@ By default:
       then personally, I would choose hack because overengineered solution is harder to read (probably you will introduce more classes, so I will have to click a lot:). IMHO.
     * If desing pattern eases the readability of complex class, then introduce it.  
     * Learn SOLID and desing pattens. Readability does not mean that you should not be an expert in OOD.
+ 
+ 9. Do not use commas and labels.
+ 
+ 10. Keep away from creating your custom annotations. Use lambdas. Annotaions should serve only as metainformation
  
 Testing pitafalls:
 
