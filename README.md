@@ -62,6 +62,10 @@ By default:
  10. Keep away from creating your custom annotations. Try to use lambdas.
     * Annotations are hard to debug.
     * Annotations are hard to test.
+    
+ 11. Do not use inner classes.
+    * C# does not have them.
+    * Hard to read.
  
 Testing pitafalls:
 
