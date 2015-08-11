@@ -8,23 +8,28 @@ By default:
     * Everything is an object. Right?
     * Scala does not have primitives.
     
- 2. Do not use checked exceptions, use objects and Optional class.
-    * No exception chaining - hard to read.
-    * Do not violate OCP.
+ 2. Do not use checked exceptions, create your own response objects or use Java 8 Optional class.
+    * throws clause  for each method is hard to read.
+    * Checked exceptions violate OCP.
     * In java 8 you cannot map, filter etc on function with checked exception, this leads to rethrowing, and noisy code.
-    * C# (and any other language) does not have checked excptions.
-    * Check Effective Java Item 59: Avoid unnecessary use of checked exceptions .
+    * Using checked exceptions for flow control (app logic) usually leads to poor desing.
+    * C# (and any other language) does not have checked exceptions.
+    * Check Effective Java Item 59: Avoid unnecessary use of checked exceptions.
+
+ 3. Minimize the use of runtime exceptions, create your own response objects or use Java 8 Optional class.
+    * Dont Use Exceptions For Flow Control.
+    * Use standard runtime exceptions as much as possible.
     
- 3. If you want to extend a class.. (do not use abstract class or ordinary class, use composition and interfaces)
+ 3. If you want to extend a class... (do not use abstract class or ordinary class, use composition and interfaces)
     * Try to decouple class into smaller clasees. Use composition over inheritance.
     * Use Interface instead of abstract class (especially, starting from java 8).
     * If you cannot apply two mentioned options, then use abstract class, and only then ordinary class (probably this will lead to poor design).
-    * Learn Strategy pattern.
-    * And maybe Factory pattern.
+    * Check Strategy pattern.
+    * Check Factory pattern.
     * Go(golang) does not have classes, only interfaces.
     
  4. Do not use arrays, use collections.
-    * Array is primitive (watch point 1).
+    * Array is almost same as primitive (check point 1).
     * In long term, you will reach the point when you will convert array to list.
     * There is no clause when to use array, except optimization.
     * Array is not used in many higher order languages.
